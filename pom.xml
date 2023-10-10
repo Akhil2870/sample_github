@@ -30,7 +30,7 @@
 			      <muleVersion>4.5.0</muleVersion>
 			      <username>Akhil_Adnala11</username>
 			      <password>Qwerty123@</password>
-			      <applicationName>sample_github</applicationName>
+			      <applicationName>sample_github154</applicationName>
 			      <environment>Sandbox</environment>   
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
