@@ -12,8 +12,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-		<app.runtime>4.4.0-20230320</app.runtime>
+		<app.name>sample_github</app.name>
+		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
 	</properties>
 
@@ -23,13 +23,19 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.2.0</version>
-			<extensions>true</extensions>
+			
+			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
 		<configuration>
 			<cloudHubDeployment>
-			      <uri>https://cloudhub.io</uri>
+			      <uri>https://anypoint.mulesoft.com</uri>
 			      <muleVersion>4.5.0</muleVersion>
-			      <username>Akhil_Adnala11</username>
-			      <password>Qwerty123@</password>
+			      <username>ANYPOINT_PLATFORM_USERNAME</username>
+			      <password>ANYPOINT_PLATFORM_PASSWORD</password>
 			      <applicationName>sample_github154</applicationName>
 			      <environment>Sandbox</environment>   
 			      <workers>1</workers>
@@ -42,12 +48,6 @@
 				</properties>
 		 	 </cloudHubDeployment>
 		</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
 			</plugin>
 		</plugins>
 	</build>
