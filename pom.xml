@@ -26,6 +26,7 @@
 			<extensions>true</extensions>
 		<configuration>
 			<cloudHubDeployment>
+			      <uri>https://cloudhub.io</uri>
 			      <muleVersion>4.5.0</muleVersion>
 			      <username>Akhil_Adnala11</username>
 			      <password>Qwerty123@</password>
