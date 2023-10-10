@@ -22,10 +22,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.2.0</version>
+				<version>3.8.2</version>
 				<configuration>
 			<cloudHubDeployment>
-			      <muleVersion>4.3.0</muleVersion>
+			      <muleVersion>4.5.0</muleVersion>
 			      <username>ANYPOINT_PLATFORM_USERNAME</username>
 			      <password>ANYPOINT_PLATFORM_PASSWORD</password>
 			      <applicationName>sample_github</applicationName>
