@@ -36,7 +36,7 @@
 			      <muleVersion>4.5.0</muleVersion>
 			      <username>${ANYPOINT_PLATFORM_USERNAME}</username>
 			      <password>${ANYPOINT_PLATFORM_PASSWORD}</password>
-			      <applicationName>sample_github154</applicationName>
+			      <applicationName>sample_github</applicationName>
 			      <environment>Sandbox</environment>   
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
