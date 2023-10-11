@@ -12,7 +12,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<app.name>sample_github</app.name>
+		<app.name>sample-github</app.name>
 		<app.runtime>4.4.0</app.runtime>
 		<mule.maven.plugin.version>3.8.2</mule.maven.plugin.version>
 	</properties>
@@ -36,7 +36,7 @@
 			      <muleVersion>4.5.0</muleVersion>
 			      <username>ANYPOINT_PLATFORM_USERNAME</username>
 			      <password>ANYPOINT_PLATFORM_PASSWORD</password>
-			      <applicationName>sample_github</applicationName>
+			      <applicationName>sample-github</applicationName>
 			      <environment>Sandbox</environment>   
 			      <workers>1</workers>
 			      <workerType>MICRO</workerType>
