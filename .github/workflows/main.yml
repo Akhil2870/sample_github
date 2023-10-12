@@ -4,13 +4,12 @@ on:
   push:
     branches: [main]
 jobs:
-  build:
+    - name: Listen for Solace Message
+      run:
+          solace -c "vpn=$SOLACE_VPN&host=$SOLACE_HOST&username=$SOLACE_USERNAME&queue=$SOLACE_QUEUE" subscribe -w
+              build:
     runs-on: ubuntu-latest
     steps:
-     - name: Check for Solace Message
-        id: check-solace
-        run: |
-          
     - name: Checkout this repo
       uses: actions/checkout@v3
     - name: Cache dependencies
