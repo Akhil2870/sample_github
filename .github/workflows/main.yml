@@ -1,13 +1,17 @@
 
 name: Build and Deploy to Sandbox
+
 on:
   push:
-    branches: [main]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
 jobs:
-    - name: Listen for Solace Message
-      run:
+  build:
+    -name: Listen for solace
+    run:
           solace -c "vpn=$SOLACE_VPN&host=$SOLACE_HOST&username=$SOLACE_USERNAME&queue=$SOLACE_QUEUE" subscribe -w
-              build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout this repo
@@ -63,4 +67,5 @@ jobs:
         mvn deploy -DmuleDeploy \
          -Dmule.artifact=$artifactName \
          -Danypoint.username="$USERNAME" \
-         -Danypoint.password="$PASSWORD"
+         -Danypoint.password="$PASSWORD" 
+view rawbasic-build.yml hosted with ❤ by GitHub
