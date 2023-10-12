@@ -12,9 +12,10 @@ jobs:
     steps:
     - name: Install Solace CLI
       run: |
-         curl -o solace.tar.gz -L https://products.solace.com/download/PUBSUB_CLI/version && \
-                      tar -xzf solace.tar.gz
-
+          curl -o solace.tar.gz https://products.solace.com/download/PUBSUB_CLI/version
+          tar -zxvf solace.tar.gz
+          sudo mv solace /usr/local/bin
+      shell: bash
    
 
     - name: Listen for solace
