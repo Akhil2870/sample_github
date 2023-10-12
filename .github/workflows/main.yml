@@ -9,11 +9,11 @@ on:
     
 jobs:
   build:
-    -name: Listen for solace
-    run:
+    - name: Listen for solace
+      run:
           solace -c "vpn=$SOLACE_VPN&host=$SOLACE_HOST&username=$SOLACE_USERNAME&queue=$SOLACE_QUEUE" subscribe -w
-    runs-on: ubuntu-latest
-    steps:
+  runs-on: ubuntu-latest
+   steps:
     - name: Checkout this repo
       uses: actions/checkout@v3
     - name: Cache dependencies
@@ -68,4 +68,3 @@ jobs:
          -Dmule.artifact=$artifactName \
          -Danypoint.username="$USERNAME" \
          -Danypoint.password="$PASSWORD" 
-view rawbasic-build.yml hosted with ❤ by GitHub
