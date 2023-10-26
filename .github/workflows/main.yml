@@ -1,4 +1,7 @@
 name: Build and Deploy to Sandbox
+env:
+  owner: Akhil2870
+  repo: sample_github
 
 on:
   repository_dispatch:
